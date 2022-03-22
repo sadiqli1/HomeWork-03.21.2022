@@ -4,8 +4,8 @@ using System.Text;
 
 namespace HomeWork_03._21._2022
 {
-    interface IPrintable
+    interface IPrintable<T>
     {
-        public void Print();
+        public void Print(T print);
     }
 }

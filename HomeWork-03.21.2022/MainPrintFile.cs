@@ -4,15 +4,11 @@ using System.Text;
 
 namespace HomeWork_03._21._2022
 {
-    class MainPrintFile<T> : IPrintable
+    class MainPrintFile<T> : IPrintable<T>
     {
-        public MainPrintFile(T print)
+        public void Print(T print)
         {
             Console.WriteLine($"{print} cap edildi");
-        }
-        public void Print()
-        {
-
         }
     }
 }
